@@ -32,6 +32,9 @@
             numericUpDownDigitSum = new NumericUpDown();
             labelDigitSum = new Label();
             labelDigitProduct = new Label();
+            labelSimpleDigitDifference = new Label();
+            labelAlternatingDigitDifferenceFromFront = new Label();
+            labelAlternatingDigitDifferenceFromBack = new Label();
             ((System.ComponentModel.ISupportInitialize)numericUpDownDigitSum).BeginInit();
             SuspendLayout();
             // 
@@ -72,11 +75,41 @@
             labelDigitProduct.TabIndex = 3;
             labelDigitProduct.Text = "digit product:";
             // 
+            // labelSimpleDigitDifference
+            // 
+            labelSimpleDigitDifference.AutoSize = true;
+            labelSimpleDigitDifference.Location = new Point(12, 83);
+            labelSimpleDigitDifference.Name = "labelSimpleDigitDifference";
+            labelSimpleDigitDifference.Size = new Size(128, 15);
+            labelSimpleDigitDifference.TabIndex = 4;
+            labelSimpleDigitDifference.Text = "simple digit difference:";
+            // 
+            // labelAlternatingDigitDifferenceFromFront
+            // 
+            labelAlternatingDigitDifferenceFromFront.AutoSize = true;
+            labelAlternatingDigitDifferenceFromFront.Location = new Point(12, 98);
+            labelAlternatingDigitDifferenceFromFront.Name = "labelAlternatingDigitDifferenceFromFront";
+            labelAlternatingDigitDifferenceFromFront.Size = new Size(208, 15);
+            labelAlternatingDigitDifferenceFromFront.TabIndex = 5;
+            labelAlternatingDigitDifferenceFromFront.Text = "alternating digit difference from front:";
+            // 
+            // labelAlternatingDigitDifferenceFromBack
+            // 
+            labelAlternatingDigitDifferenceFromBack.AutoSize = true;
+            labelAlternatingDigitDifferenceFromBack.Location = new Point(12, 113);
+            labelAlternatingDigitDifferenceFromBack.Name = "labelAlternatingDigitDifferenceFromBack";
+            labelAlternatingDigitDifferenceFromBack.Size = new Size(207, 15);
+            labelAlternatingDigitDifferenceFromBack.TabIndex = 6;
+            labelAlternatingDigitDifferenceFromBack.Text = "alternating digit difference from back:";
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(207, 245);
+            ClientSize = new Size(335, 139);
+            Controls.Add(labelAlternatingDigitDifferenceFromBack);
+            Controls.Add(labelAlternatingDigitDifferenceFromFront);
+            Controls.Add(labelSimpleDigitDifference);
             Controls.Add(labelDigitProduct);
             Controls.Add(labelDigitSum);
             Controls.Add(numericUpDownDigitSum);
@@ -96,5 +129,8 @@
 		private NumericUpDown numericUpDownDigitSum;
 		private Label labelDigitSum;
         private Label labelDigitProduct;
+        private Label labelSimpleDigitDifference;
+        private Label labelAlternatingDigitDifferenceFromFront;
+        private Label labelAlternatingDigitDifferenceFromBack;
     }
 }
