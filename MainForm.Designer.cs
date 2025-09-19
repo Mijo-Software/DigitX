@@ -20,69 +20,81 @@
             base.Dispose(disposing);
         }
 
-		#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-		/// <summary>
-		///  Required method for Designer support - do not modify
-		///  the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
-			this.labelNumber = new Label();
-			this.numericUpDownDigitSum = new NumericUpDown();
-			this.labelDigitSum = new Label();
-			((System.ComponentModel.ISupportInitialize)this.numericUpDownDigitSum).BeginInit();
-			this.SuspendLayout();
-			// 
-			// labelNumber
-			// 
-			this.labelNumber.AutoSize = true;
-			this.labelNumber.Location = new Point(12, 14);
-			this.labelNumber.Name = "labelNumber";
-			this.labelNumber.Size = new Size(49, 15);
-			this.labelNumber.TabIndex = 0;
-			this.labelNumber.Text = "number";
-			// 
-			// numericUpDownDigitSum
-			// 
-			this.numericUpDownDigitSum.Location = new Point(67, 12);
-			this.numericUpDownDigitSum.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
-			this.numericUpDownDigitSum.Name = "numericUpDownDigitSum";
-			this.numericUpDownDigitSum.Size = new Size(120, 23);
-			this.numericUpDownDigitSum.TabIndex = 1;
-			this.numericUpDownDigitSum.TextAlign = HorizontalAlignment.Center;
-			this.numericUpDownDigitSum.ValueChanged += this.NumericUpDownDigitSum_ValueChanged;
-			// 
-			// labelDigitSum
-			// 
-			this.labelDigitSum.AutoSize = true;
-			this.labelDigitSum.Location = new Point(12, 53);
-			this.labelDigitSum.Name = "labelDigitSum";
-			this.labelDigitSum.Size = new Size(60, 15);
-			this.labelDigitSum.TabIndex = 2;
-			this.labelDigitSum.Text = "digit sum:";
-			// 
-			// MainForm
-			// 
-			this.AutoScaleDimensions = new SizeF(7F, 15F);
-			this.AutoScaleMode = AutoScaleMode.Font;
-			this.ClientSize = new Size(207, 245);
-			this.Controls.Add(this.labelDigitSum);
-			this.Controls.Add(this.numericUpDownDigitSum);
-			this.Controls.Add(this.labelNumber);
-			this.FormBorderStyle = FormBorderStyle.FixedSingle;
-			this.Name = "MainForm";
-			this.StartPosition = FormStartPosition.CenterScreen;
-			this.Text = "DigitX";
-			((System.ComponentModel.ISupportInitialize)this.numericUpDownDigitSum).EndInit();
-			this.ResumeLayout(false);
-			this.PerformLayout();
-		}
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            labelNumber = new Label();
+            numericUpDownDigitSum = new NumericUpDown();
+            labelDigitSum = new Label();
+            labelDigitProduct = new Label();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownDigitSum).BeginInit();
+            SuspendLayout();
+            // 
+            // labelNumber
+            // 
+            labelNumber.AutoSize = true;
+            labelNumber.Location = new Point(12, 14);
+            labelNumber.Name = "labelNumber";
+            labelNumber.Size = new Size(49, 15);
+            labelNumber.TabIndex = 0;
+            labelNumber.Text = "number";
+            // 
+            // numericUpDownDigitSum
+            // 
+            numericUpDownDigitSum.Location = new Point(67, 12);
+            numericUpDownDigitSum.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            numericUpDownDigitSum.Name = "numericUpDownDigitSum";
+            numericUpDownDigitSum.Size = new Size(120, 23);
+            numericUpDownDigitSum.TabIndex = 1;
+            numericUpDownDigitSum.TextAlign = HorizontalAlignment.Center;
+            numericUpDownDigitSum.ValueChanged += NumericUpDownDigitSum_ValueChanged;
+            // 
+            // labelDigitSum
+            // 
+            labelDigitSum.AutoSize = true;
+            labelDigitSum.Location = new Point(12, 53);
+            labelDigitSum.Name = "labelDigitSum";
+            labelDigitSum.Size = new Size(60, 15);
+            labelDigitSum.TabIndex = 2;
+            labelDigitSum.Text = "digit sum:";
+            // 
+            // labelDigitProduct
+            // 
+            labelDigitProduct.AutoSize = true;
+            labelDigitProduct.Location = new Point(12, 68);
+            labelDigitProduct.Name = "labelDigitProduct";
+            labelDigitProduct.Size = new Size(79, 15);
+            labelDigitProduct.TabIndex = 3;
+            labelDigitProduct.Text = "digit product:";
+            // 
+            // MainForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(207, 245);
+            Controls.Add(labelDigitProduct);
+            Controls.Add(labelDigitSum);
+            Controls.Add(numericUpDownDigitSum);
+            Controls.Add(labelNumber);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Name = "MainForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "DigitX";
+            ((System.ComponentModel.ISupportInitialize)numericUpDownDigitSum).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
+        }
 
-		#endregion
+        #endregion
 
-		private Label labelNumber;
+        private Label labelNumber;
 		private NumericUpDown numericUpDownDigitSum;
 		private Label labelDigitSum;
-	}
+        private Label labelDigitProduct;
+    }
 }

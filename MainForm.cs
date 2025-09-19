@@ -2,7 +2,7 @@ namespace DigitX
 {
 	public partial class MainForm : Form
 	{
-		private int digitSum;
+		private int digitSum, digitProduct;
 
 		public MainForm()
 		{
@@ -11,8 +11,10 @@ namespace DigitX
 
 		private void NumericUpDownDigitSum_ValueChanged(object sender, EventArgs e)
 		{
-			digitSum = CrossOperations.DigitSum(number: (int)numericUpDownDigitSum.Value);
-			labelDigitSum.Text = $"digit sum: {digitSum}";
-		}
-	}
+            digitSum = CrossOperations.DigitSum(number: (int)numericUpDownDigitSum.Value);
+            digitProduct = CrossOperations.DigitProduct(number: (int)numericUpDownDigitSum.Value);
+            labelDigitSum.Text = $"digit sum: {digitSum}";
+            labelDigitProduct.Text = $"digit product: {digitProduct}";
+        }
+    }
 }
