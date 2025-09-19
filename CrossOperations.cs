@@ -93,7 +93,7 @@
 		}
 
 		// 4. Safe Digit Quotient (divide, skip zeros, from front/back)
-		public static double SafeDigitQuotient(int number, bool fromFront = true)
+		public static int SafeDigitQuotient(int number, bool fromFront = true)
 		{
 			int n = Math.Abs(value: number);
 			string text = n.ToString();
@@ -102,7 +102,7 @@
 				return 0;
 			}
 
-			double quotient;
+            int quotient;
 			if (fromFront)
 			{
 				quotient = text[index: 0] - '0';

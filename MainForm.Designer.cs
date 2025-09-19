@@ -35,6 +35,8 @@
             labelSimpleDigitDifference = new Label();
             labelAlternatingDigitDifferenceFromFront = new Label();
             labelAlternatingDigitDifferenceFromBack = new Label();
+            labelDigitQuotientFromFrontSafe = new Label();
+            labelDigitQuotientFromBackSafe = new Label();
             ((System.ComponentModel.ISupportInitialize)numericUpDownDigitSum).BeginInit();
             SuspendLayout();
             // 
@@ -102,11 +104,31 @@
             labelAlternatingDigitDifferenceFromBack.TabIndex = 6;
             labelAlternatingDigitDifferenceFromBack.Text = "alternating digit difference from back:";
             // 
+            // labelDigitQuotientFromFrontSafe
+            // 
+            labelDigitQuotientFromFrontSafe.AutoSize = true;
+            labelDigitQuotientFromFrontSafe.Location = new Point(12, 128);
+            labelDigitQuotientFromFrontSafe.Name = "labelDigitQuotientFromFrontSafe";
+            labelDigitQuotientFromFrontSafe.Size = new Size(172, 15);
+            labelDigitQuotientFromFrontSafe.TabIndex = 7;
+            labelDigitQuotientFromFrontSafe.Text = "digit quotient from front (safe):";
+            // 
+            // labelDigitQuotientFromBackSafe
+            // 
+            labelDigitQuotientFromBackSafe.AutoSize = true;
+            labelDigitQuotientFromBackSafe.Location = new Point(12, 143);
+            labelDigitQuotientFromBackSafe.Name = "labelDigitQuotientFromBackSafe";
+            labelDigitQuotientFromBackSafe.Size = new Size(171, 15);
+            labelDigitQuotientFromBackSafe.TabIndex = 8;
+            labelDigitQuotientFromBackSafe.Text = "digit quotient from back (safe):";
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(335, 139);
+            ClientSize = new Size(335, 171);
+            Controls.Add(labelDigitQuotientFromBackSafe);
+            Controls.Add(labelDigitQuotientFromFrontSafe);
             Controls.Add(labelAlternatingDigitDifferenceFromBack);
             Controls.Add(labelAlternatingDigitDifferenceFromFront);
             Controls.Add(labelSimpleDigitDifference);
@@ -132,5 +154,7 @@
         private Label labelSimpleDigitDifference;
         private Label labelAlternatingDigitDifferenceFromFront;
         private Label labelAlternatingDigitDifferenceFromBack;
+        private Label labelDigitQuotientFromFrontSafe;
+        private Label labelDigitQuotientFromBackSafe;
     }
 }
