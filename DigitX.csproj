@@ -10,7 +10,7 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <Title>DigitX</Title>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <Company>Mijo Software</Company>
     <Authors>Michael Johne</Authors>
     <Description>DigitX performs various cross operations.</Description>
